@@ -1,0 +1,10 @@
+version: '2'
+
+volumes:
+    log-volume:
+
+services:
+    log_listener:
+        build: './log-listener'
+        volumes:
+            - 'log-volume:/data'
